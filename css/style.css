@@ -1,0 +1,265 @@
+/* Font */
+@font-face {
+	font-family: blockit-regular;
+	src: url(../font/Blockit-Regular.otf);
+}
+
+.font-blockit-regular {
+	font-family: blockit-regular;
+}
+
+@font-face {
+	font-family: source-hans-sans-sc-regular;
+	src: url(../font/SourceHanSansSC-Regular.otf);
+}
+
+.font-source-hans-sans-sc-regular {
+	font-family: source-hans-sans-sc-regular;
+}
+
+/* Initialization */
+* {
+	box-sizing: border-box;
+	font-family: source-hans-sans-sc-regular;
+	margin: 0;
+	padding: 0;
+}
+
+/* HTML */
+@media (prefers-color-scheme: dark) {
+	a {
+		color: white;
+	}
+
+	body {
+		background-color: #121212;
+		color: white;
+	}
+
+	button,
+	fieldset,
+	input,
+	legend,
+	select,
+	textarea {
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		box-sizing: border-box;
+	}
+
+	button,
+	input,
+	select,
+	textarea {
+		background-color: #121212;
+		border: 2px solid white;
+		border-radius: 10px;
+		color: white;
+		font-size: 1.25rem;
+		padding: 0.5rem 0.75rem;
+		transition: 0.5s;
+	}
+
+	button,
+	input[type="button"] {
+		background-color: #bb86fc;
+		border: none;
+		color: black;
+		cursor: pointer;
+		padding: 0.75rem 1.25rem;
+		transition: 0.5s;
+	}
+
+	button:hover,
+	input[type="button"]:hover {
+		filter: brightness(75%);
+		transition: 0.5s;
+	}
+
+	button:active,
+	input[type="button"]:active {
+		filter: brightness(50%);
+		transition: 0.5s;
+	}
+
+	input[type="text"]:focus,
+	select:focus,
+	textarea:focus {
+		box-shadow: 0 0 0 4px #03dac6;
+		outline: none;
+		transition: 0.5s;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	a {
+		color: black;
+	}
+
+	body {
+		background-color: white;
+		color: black;
+	}
+
+	button,
+	fieldset,
+	input,
+	legend,
+	select,
+	textarea {
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		box-sizing: border-box;
+	}
+
+	button,
+	input,
+	select,
+	textarea {
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 10px;
+		color: black;
+		font-size: 1.25rem;
+		padding: 0.5rem 0.75rem;
+		transition: 0.5s;
+	}
+
+	button,
+	input[type="button"] {
+		background-color: #6200ee;
+		border: none;
+		color: white;
+		cursor: pointer;
+		padding: 0.75rem 1.25rem;
+		transition: 0.5s;
+	}
+
+	button:hover,
+	input[type="button"]:hover {
+		filter: brightness(75%);
+		transition: 0.5s;
+	}
+
+	button:active,
+	input[type="button"]:active {
+		filter: brightness(50%);
+		transition: 0.5s;
+	}
+
+	input[type="text"]:focus,
+	select:focus,
+	textarea:focus {
+		box-shadow: 0 0 0 4px #03dac6;
+		outline: none;
+		transition: 0.5s;
+	}
+}
+
+body {
+	background-position: center;
+	background-size: cover;
+}
+
+footer {
+	font-size: 1.2rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+ul {
+	padding-left: 2.5em;
+}
+
+/* Pseudo-elements */
+
+/* ID */
+#url,
+#url-result {
+	width: 100%;
+}
+
+/* Class */
+.logo {
+	width: 100%;
+}
+
+.header {
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0 60px;
+}
+
+.nav {
+	align-content: center;
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+	list-style-type: none;
+	margin: auto 0;
+}
+
+.nav li a {
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	padding: 0 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.box {
+		background-color: #292929;
+		box-shadow: 0px 0px 10px #292929;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.box {
+		background-color: #e5e5e5;
+		box-shadow: 0px 0px 10px #e5e5e5;
+	}
+}
+
+.box {
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	transition: 0.5s;
+}
+
+.box-left {
+	grid-column: 1 / span 1;
+}
+
+.box-left-middle {
+	grid-column: 1 / span 2;
+}
+
+.box-middle-right {
+	grid-column: 2 / span 2;
+}
+
+.box-right {
+	grid-column: 3 / span 1;
+}
+
+.box-full-width {
+	grid-column: 1 / span 3;
+}
+
+.format-url {
+	display: flex;
+	gap: 10px;
+}
