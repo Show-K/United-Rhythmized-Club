@@ -1,6 +1,5 @@
 function clock() {
-	var now = new Date();
-	var strTime=now.toLocaleString();
-	document.getElementById("clock").innerHTML = strTime;
-	setTimeout(clock, 500);
+	const now = new Date();
+	document.getElementById("clock").innerHTML = now.toLocaleString();
+	requestAnimationFrame(clock);
 }
