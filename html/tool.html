@@ -1,14 +1,14 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/style.css">
 	<meta charset="utf-8">
 	<script src="../js/clock.js"></script>
 	<script src="../js/tool.js"></script>
 	<title>Announcement</title>
 </head>
 
-<body  onload="clock();">
+<body onload="clock();">
 	<div class="container">
 		<div class="header">
 			<h1>
@@ -29,11 +29,31 @@
 						公告
 					</a>
 				</li>
-				<li>
-					<a href="work.html">
-						作品
-					</a>
-				</li>
+				<div class="nav-subnav">
+					<li>
+						<a href="work.html">
+							作品
+							<i class="fa fa-caret-down"></i>
+						</a>
+					</li>
+					<ul class="subnav">
+						<li>
+							<a href="work/game.html">
+								游戏
+							</a>
+						</li>
+						<li>
+							<a href="work/music.html">
+								音乐
+							</a>
+						</li>
+						<li>
+							<a href="work/video.html">
+								视频
+							</a>
+						</li>
+					</ul>
+				</div>
 				<li>
 					<a href="wiki.html">
 						Wiki
@@ -69,6 +89,16 @@
 					<input type="text" id="url-result" placeholder="结果" disabled>
 					<input type="button" id="copy" value="复制到粘贴板" onclick="copyToClipboardFormatUrl();">
 				</form>
+			</div>
+			<div class="box box-full-width">
+				<h2>
+					音频可视化
+				</h2>
+				<a href="tool/visualizer.html" style="border-radius: 10px;" target="_blank">
+					<button type="button">
+						点击前往
+					</button>
+				</a>
 			</div>
 		</div>
 	</div>

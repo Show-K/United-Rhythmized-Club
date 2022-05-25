@@ -5,9 +5,9 @@ function visualizer(id) {
 	const analyzer = audioContext.createAnalyser();
 	mediaElementSource.connect(analyzer);
 	mediaElementSource.connect(audioContext.destination);
-	const frequencyData = new Uint8Array(analyzer.frequencyBinCount);
-	analyzer.getByteFrequencyData(frequencyData);
+	const byteFrequencyData = new Uint8Array(analyzer.frequencyBinCount);
 	const visualizer = document.getElementById("visualizer-" + id);
+	visualizer.innerHTML = "";
 	for (let i = 0; i < 32; i++) {
 		const visualizerBar = document.createElement("div");
 		visualizerBar.className = "visualizer-bar";
@@ -15,12 +15,12 @@ function visualizer(id) {
 		visualizer.appendChild(visualizerBar);
 	}
 	function update() {
-		analyzer.getByteFrequencyData(frequencyData);
+		analyzer.getByteFrequencyData(byteFrequencyData);
 		for (let i = 0; i < 32; i++) {
 			const bar = document.getElementById("visualizer-bar-" + id + "-" + i);
-			const frequency = frequencyData[i * frequencyData.length / 32];
+			const frequency = byteFrequencyData[i * byteFrequencyData.length / 32] || 0;
 			bar.style.backgroundColor = "hsl(" + frequency + ", 100%, 50%)";
-			bar.style.height = (frequency * 100 / 360) + "%";
+			bar.style.height = Math.min(100, (frequency * 100 / 360)) + "%";
 		}
 		requestAnimationFrame(update);
 	}
