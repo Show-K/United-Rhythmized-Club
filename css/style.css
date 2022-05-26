@@ -19,7 +19,7 @@
 /* Initialization */
 * {
 	box-sizing: border-box;
-	font-family: source-hans-sans-sc-regular;
+	font-family: source-hans-sans-sc-regular, sans-serif;
 	image-rendering: pixelated;
 	margin: 0;
 	padding: 0;
@@ -234,6 +234,7 @@ ul {
 	}
 }
 
+.nav li,
 .nav li a {
 	font-size: 1.5rem;
 	text-decoration: none;
