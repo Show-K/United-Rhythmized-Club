@@ -250,9 +250,9 @@ ul {
 
 	.nav {
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto;
 		gap: 0 auto;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 }
 
