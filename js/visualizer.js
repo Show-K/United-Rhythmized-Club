@@ -1,10 +1,29 @@
+// Global variables
+let requestID = null;
+const audioContext = new AudioContext();
+const ANALYZER_NODES = new Map();
+
+/**
+ * Initialize a visualizer.
+ * @param {string} id 
+ */
 function visualizer(id) {
+	cancelAnimationFrame(requestID);
 	const audio = document.getElementById(id);
-	const audioContext = new AudioContext();
-	const mediaElementSource = audioContext.createMediaElementSource(audio);
-	const analyzer = audioContext.createAnalyser();
-	mediaElementSource.connect(analyzer);
-	mediaElementSource.connect(audioContext.destination);
+	/**
+	 * @type {AnalyserNode}
+	 */
+	let analyzer;
+	if (ANALYZER_NODES.has(audio)) {
+		analyzer = ANALYZER_NODES.get(audio);
+	}
+	else {
+		const mediaElementSource = audioContext.createMediaElementSource(audio);
+		analyzer = audioContext.createAnalyser();
+		ANALYZER_NODES.set(audio, analyzer);
+		mediaElementSource.connect(analyzer);
+		mediaElementSource.connect(audioContext.destination);
+	}
 	const byteFrequencyData = new Uint8Array(analyzer.frequencyBinCount);
 	const visualizer = document.getElementById("visualizer-" + id);
 	visualizer.innerHTML = "";
@@ -14,7 +33,7 @@ function visualizer(id) {
 		visualizerBar.id = "visualizer-bar-" + id + "-" + i;
 		visualizer.appendChild(visualizerBar);
 	}
-	function update() {
+	function animationFrame() {
 		analyzer.getByteFrequencyData(byteFrequencyData);
 		for (let i = 0; i < 32; i++) {
 			const bar = document.getElementById("visualizer-bar-" + id + "-" + i);
@@ -22,9 +41,9 @@ function visualizer(id) {
 			bar.style.backgroundColor = "hsl(" + frequency + ", 100%, 50%)";
 			bar.style.height = Math.min(100, (frequency * 100 / 360)) + "%";
 		}
-		requestAnimationFrame(update);
+		requestID = requestAnimationFrame(animationFrame);
 	}
-	update();
+	animationFrame();
 }
 function visualizerStepForward() {
 	visualizer("step-forward");
@@ -43,4 +62,13 @@ function visualizerDetermination() {
 }
 function visualizerOptimism() {
 	visualizer("optimism");
+}
+function visualizerTool() {
+	document.getElementById("file").addEventListener("change", function (event) {
+		const file = event.target.files[0];
+		const url = URL.createObjectURL(file);
+		const audio = document.getElementById("audio");
+		audio.src = url;
+		visualizer("audio");
+	}, false);
 }

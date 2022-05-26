@@ -7,13 +7,15 @@
 	<title>Visualizer</title>
 </head>
 
-<body">
-	<div class="container">
-		<div class="wrapper">
-			<form>
-				<input type="file" id="file" name="file" accept="audio/*">
-			</form>
-		</div>
+<body onload="visualizerTool();">
+	<div class="container container-simple">
+		<div class="visualizer" id="visualizer-audio"></div>
+		<audio controls id="audio">
+			您的浏览器不支持音频元素（还在用IE？！还不快去换现代浏览器！！）
+		</audio>
+		<form>
+			<input type="file" id="file" name="file" accept="audio/*">
+		</form>
 	</div>
 </body>
 
