@@ -16,13 +16,9 @@
 	src: url(../font/SourceHanSansSC-Regular.otf);
 }
 
-.font-source-hans-sans-sc-regular {
-	font-family: source-hans-sans-sc-regular;
-}
-
 /* Initialization */
 * {
-	box-sizing: smooth;
+	box-sizing: border-box;
 	font-family: source-hans-sans-sc-regular;
 	image-rendering: pixelated;
 	margin: 0;
@@ -39,7 +35,6 @@ textarea {
 	appearance: none;
 	background-color: transparent;
 	border: none;
-	box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
