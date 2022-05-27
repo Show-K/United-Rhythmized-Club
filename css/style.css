@@ -1,10 +1,10 @@
-@import url(visualizer.css);
+@import url(/css/visualizer.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
 /* Font */
 @font-face {
 	font-family: blockit-regular;
-	src: url(../font/Blockit-Regular.otf);
+	src: url(/font/Blockit-Regular.otf);
 }
 
 .font-blockit-regular {
@@ -13,7 +13,7 @@
 
 @font-face {
 	font-family: source-hans-sans-sc-regular;
-	src: url(../font/SourceHanSansSC-Regular.otf);
+	src: url(/font/SourceHanSansSC-Regular.otf);
 }
 
 /* Initialization */
@@ -201,10 +201,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-}
-
-.container-simple {
-	padding: 20px;
 }
 
 .header {
