@@ -219,6 +219,14 @@ ul {
 	white-space: nowrap;
 }
 
+.header>h1::selection,
+.header>h1>span::selection,
+.header>.nav>li::selection,
+.header>.nav>li>a::selection {
+	background-color: white;
+	color: black;
+}
+
 .header ul {
 	padding: 0;
 }
