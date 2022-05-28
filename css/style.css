@@ -3,23 +3,28 @@
 
 /* Font */
 @font-face {
-	font-family: blockit-regular;
-	src: url(/font/Blockit-Regular.otf);
+	font-family: blockit;
+	src: url(/font/Blockit-Regular.woff2) format("woff2");
 }
 
-.font-blockit-regular {
-	font-family: blockit-regular;
+.font-blockit {
+	font-family: blockit, sans-serif;
 }
 
 @font-face {
-	font-family: source-hans-sans-sc-regular;
-	src: url(/font/SourceHanSansSC-Regular.otf);
+	font-family: source-han-sans;
+	src: local(Source Han Sans VF),
+		local(Source Han Sans SC VF),
+		local(Source Han Sans CN VF),
+		local(Source Han Sans SC),
+		local(Source Han Sans CN),
+		url(/font/SourceHanSansCN-VF.otf.woff2) format("woff2");
 }
 
 /* Initialization */
 * {
 	box-sizing: border-box;
-	font-family: source-hans-sans-sc-regular, sans-serif;
+	font-family: source-han-sans, sans-serif;
 	image-rendering: pixelated;
 	margin: 0;
 	padding: 0;
@@ -249,7 +254,7 @@ ul {
 	.header {
 		align-items: flex-start;
 		flex-direction: column;
-		gap: 10px;
+		gap: 0.5rem;
 	}
 
 	.nav {
