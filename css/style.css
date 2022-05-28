@@ -228,6 +228,11 @@ ul {
 	height: 4.5em;
 }
 
+.logo img::selection {
+	background-color: white;
+	color: black;
+}
+
 .nav {
 	align-content: center;
 	align-items: baseline;
