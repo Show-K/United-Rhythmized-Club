@@ -1,0 +1,12 @@
+.caret {
+	cursor: pointer;
+}
+
+.caret::before {
+	content: "\25bc";
+	display: inline-block;
+}
+
+.caret-right::before {
+	transform: rotate(-90deg);
+}

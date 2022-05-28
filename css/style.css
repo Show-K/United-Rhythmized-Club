@@ -1,25 +1,9 @@
+@import url(/css/font.css);
+@import url(/css/form.css);
+@import url(/css/tree.css);
 @import url(/css/visualizer.css);
+@import url(/css/wiki.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
-/* Font */
-@font-face {
-	font-family: blockit;
-	src: url(/font/Blockit-Regular.woff2) format("woff2");
-}
-
-.font-blockit {
-	font-family: blockit, sans-serif;
-}
-
-@font-face {
-	font-family: source-han-sans;
-	src: local(Source Han Sans VF),
-		local(Source Han Sans SC VF),
-		local(Source Han Sans CN VF),
-		local(Source Han Sans SC),
-		local(Source Han Sans CN),
-		url(/font/SourceHanSansCN-VF.otf.woff2) format("woff2");
-}
 
 /* Initialization */
 * {
@@ -31,18 +15,6 @@
 }
 
 /* HTML */
-button,
-fieldset,
-input,
-input::file-selector-button,
-legend,
-select,
-textarea {
-	appearance: none;
-	background-color: transparent;
-	border: none;
-}
-
 @media (prefers-color-scheme: dark) {
 	a {
 		color: white;
@@ -51,27 +23,6 @@ textarea {
 	body {
 		background-color: #202020;
 		color: white;
-	}
-
-	button,
-	input,
-	input::file-selector-button,
-	select,
-	textarea {
-		color: white;
-	}
-
-	button,
-	input[type="button"],
-	input[type="file"]::file-selector-button {
-		background-color: #4cc2ff;
-		color: black;
-	}
-
-	input[type="text"]:focus,
-	select:focus,
-	textarea:focus {
-		box-shadow: 0 0 0 4px #4cc2ff;
 	}
 }
 
@@ -84,65 +35,6 @@ textarea {
 		background-color: #f3f3f3;
 		color: black;
 	}
-
-	button,
-	input,
-	input::file-selector-button,
-	select,
-	textarea {
-		color: black;
-	}
-
-	button,
-	input[type="button"],
-	input[type="file"]::file-selector-button {
-		background-color: #0067c0;
-		color: white;
-	}
-
-	input[type="text"]:focus,
-	select:focus,
-	textarea:focus {
-		box-shadow: 0 0 0 4px #0067c0;
-	}
-}
-
-button,
-input,
-input::file-selector-button,
-select,
-textarea {
-	border-radius: 10px;
-	border-style: solid;
-	border-width: 2px;
-	font-size: 1.25rem;
-	padding: 0.5rem 0.75rem;
-}
-
-button,
-input[type="button"],
-input[type="file"]::file-selector-button {
-	border: none;
-	cursor: pointer;
-	padding: 0.75rem 1.25rem;
-}
-
-input[type="text"]:focus,
-select:focus,
-textarea:focus {
-	outline: none;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="file"]::file-selector-button:hover {
-	filter: opacity(90%);
-}
-
-button:active,
-input[type="button"]:active,
-input[type="file"]::file-selector-button:active {
-	filter: opacity(70%);
 }
 
 audio {
@@ -152,10 +44,6 @@ audio {
 body {
 	background-position: center;
 	background-size: cover;
-}
-
-button {
-	width: 100%;
 }
 
 footer {
@@ -170,20 +58,8 @@ iframe {
 	width: 100%;
 }
 
-input[type="file"] {
-	width: 100%;
-}
-
 ul {
 	padding-left: 2.5em;
-}
-
-/* Pseudo-elements */
-
-/* ID */
-#url,
-#url-result {
-	width: 100%;
 }
 
 /* Class */
@@ -366,6 +242,10 @@ li:hover .subnav {
 .box h2 img {
 	vertical-align: text-bottom;
 	width: auto;
+}
+
+.box-center {
+	justify-content: center;
 }
 
 .box-left {

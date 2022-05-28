@@ -1,0 +1,15 @@
+table,
+th,
+td {
+	border-style: solid;
+	border-width: 1px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.character-property {
+	text-align: center;
+	white-space: nowrap;
+}

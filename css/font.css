@@ -1,0 +1,19 @@
+/* Font */
+@font-face {
+	font-family: blockit;
+	src: url(/font/Blockit-Regular.woff2) format("woff2");
+}
+
+.font-blockit {
+	font-family: blockit, sans-serif;
+}
+
+@font-face {
+	font-family: source-han-sans;
+	src: local(Source Han Sans VF),
+		local(Source Han Sans SC VF),
+		local(Source Han Sans CN VF),
+		local(Source Han Sans SC),
+		local(Source Han Sans CN),
+		url(/font/SourceHanSansCN-VF.otf.woff2) format("woff2");
+}
