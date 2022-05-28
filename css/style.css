@@ -230,7 +230,7 @@ ul {
 
 .nav {
 	align-content: center;
-	align-items: center;
+	align-items: baseline;
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
