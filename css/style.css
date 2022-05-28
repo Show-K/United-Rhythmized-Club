@@ -34,6 +34,7 @@
 button,
 fieldset,
 input,
+input::file-selector-button,
 legend,
 select,
 textarea {
@@ -54,13 +55,15 @@ textarea {
 
 	button,
 	input,
+	input::file-selector-button,
 	select,
 	textarea {
 		color: white;
 	}
 
 	button,
-	input[type="button"] {
+	input[type="button"],
+	input[type="file"]::file-selector-button {
 		background-color: #4cc2ff;
 		color: black;
 	}
@@ -84,13 +87,15 @@ textarea {
 
 	button,
 	input,
+	input::file-selector-button,
 	select,
 	textarea {
 		color: black;
 	}
 
 	button,
-	input[type="button"] {
+	input[type="button"],
+	input[type="file"]::file-selector-button {
 		background-color: #0067c0;
 		color: white;
 	}
@@ -104,6 +109,7 @@ textarea {
 
 button,
 input,
+input::file-selector-button,
 select,
 textarea {
 	border-radius: 10px;
@@ -114,7 +120,8 @@ textarea {
 }
 
 button,
-input[type="button"] {
+input[type="button"],
+input[type="file"]::file-selector-button {
 	border: none;
 	cursor: pointer;
 	padding: 0.75rem 1.25rem;
@@ -127,12 +134,14 @@ textarea:focus {
 }
 
 button:hover,
-input[type="button"]:hover {
+input[type="button"]:hover,
+input[type="file"]::file-selector-button:hover {
 	filter: opacity(90%);
 }
 
 button:active,
-input[type="button"]:active {
+input[type="button"]:active,
+input[type="file"]::file-selector-button:active {
 	filter: opacity(70%);
 }
 
@@ -206,9 +215,7 @@ ul {
 }
 
 .header h1::selection,
-.header h1 span::selection,
-.header .nav>li::selection,
-.header .nav>li>a::selection {
+.header h1 ::selection {
 	background-color: white;
 	color: black;
 }
@@ -253,6 +260,12 @@ ul {
 .nav li a {
 	font-size: 1.5rem;
 	text-decoration: none;
+}
+
+.nav>li::selection,
+.nav>li>a::selection {
+	background-color: white;
+	color: black;
 }
 
 @media screen and (max-width: 1200px) {
