@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -12,16 +14,17 @@
 </head>
 
 <body onload="clock(); visualizerImmersion();">
-	<div class="container">
-		<div class="header">
+	<header>
+		<div>
+			<h1 class="font-blockit">
+				WARK
+			</h1>
 			<h1>
-				<span class="font-blockit">
-					WARK
-				</span>
-				<br>
 				作品
 			</h1>
-			<ul class="nav">
+		</div>
+		<nav>
+			<ul>
 				<li>
 					<a href="/index.html">
 						首页
@@ -33,36 +36,44 @@
 					</a>
 				</li>
 				<li>
-					作品
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/work/game.html">
-								游戏
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/music.html">
-								音乐
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/video.html">
-								视频
-							</a>
-						</li>
-					</ul>
+					<a>
+						作品
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/work/game.html">
+									游戏
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/music.html">
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/video.html">
+									视频
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
-					Wiki
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/wiki/super-smash-tabletop.html">
-								大乱桌斗
-							</a>
-						</li>
-					</ul>
+					<a>
+						Wiki
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/wiki/super-smash-tabletop.html">
+									大乱桌斗
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
 					<a href="/html/tool.html">
@@ -80,55 +91,55 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="box box-left">
-				<h2>
-					音乐
-				</h2>
-				<ul>
-					<li>
-						<a href="/html/work/music/step-forward.html">
-							Step Forward
-						</a>
-					</li>
-					<li>
-						<a href="/html/work/music/immersion.html">
-							Immersion
-						</a>
-					</li>
-					<li>
-						<a href="/html/work/music/intensity.html">
-							Intensity
-						</a>
-					</li>
-					<li>
-						<a href="/html/work/music/desperation.html">
-							Desperation
-						</a>
-					</li>
-					<li>
-						<a href="/html/work/music/determination.html">
-							Determination
-						</a>
-					</li>
-					<li>
-						<a href="/html/work/music/optimism.html">
-							Optimism
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="box box-middle-right">
-				<h2>
-					Immersion
-				</h2>
-				<div class="visualizer" id="visualizer-immersion"></div>
-				<audio controls id="immersion" preload="auto" src="/music/Immersion.ogg">
-					您的浏览器不支持音频元素（还在用IE？！还不快去换现代浏览器！！）
-				</audio>
-			</div>
-		</div>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<aside class="box grid-column-1-span-1">
+			<h2>
+				音乐
+			</h2>
+			<ul>
+				<li>
+					<a href="/html/work/music/step-forward.html">
+						Step Forward
+					</a>
+				</li>
+				<li>
+					<a href="/html/work/music/immersion.html">
+						Immersion
+					</a>
+				</li>
+				<li>
+					<a href="/html/work/music/intensity.html">
+						Intensity
+					</a>
+				</li>
+				<li>
+					<a href="/html/work/music/desperation.html">
+						Desperation
+					</a>
+				</li>
+				<li>
+					<a href="/html/work/music/determination.html">
+						Determination
+					</a>
+				</li>
+				<li>
+					<a href="/html/work/music/optimism.html">
+						Optimism
+					</a>
+				</li>
+			</ul>
+		</aside>
+		<article class="box grid-column-2-span-2">
+			<h2>
+				Immersion
+			</h2>
+			<div class="visualizer" id="visualizer-immersion"></div>
+			<audio controls id="immersion" preload="auto" src="/music/Immersion.ogg">
+				您的浏览器不支持音频元素（还在用IE？！还不快去换现代浏览器！！）
+			</audio>
+		</article>
 	</div>
 	<footer>
 		<div id="clock"></div>

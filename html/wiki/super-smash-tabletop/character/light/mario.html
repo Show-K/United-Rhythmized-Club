@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -11,16 +13,17 @@
 </head>
 
 <body onload="clock();">
-	<div class="container">
-		<div class="header">
+	<header>
+		<div>
+			<h1 class="font-blockit">
+				WIKÍ
+			</h1>
 			<h1>
-				<span class="font-blockit">
-					WIKÍ
-				</span>
-				<br>
 				Wiki
 			</h1>
-			<ul class="nav">
+		</div>
+		<nav>
+			<ul>
 				<li>
 					<a href="/index.html">
 						首页
@@ -32,36 +35,44 @@
 					</a>
 				</li>
 				<li>
-					作品
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/work/game.html">
-								游戏
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/music.html">
-								音乐
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/video.html">
-								视频
-							</a>
-						</li>
-					</ul>
+					<a>
+						作品
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/work/game.html">
+									游戏
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/music.html">
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/video.html">
+									视频
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
-					Wiki
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/wiki/super-smash-tabletop.html">
-								大乱桌斗
-							</a>
-						</li>
-					</ul>
+					<a>
+						Wiki
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/wiki/super-smash-tabletop.html">
+									大乱桌斗
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
 					<a href="/html/tool.html">
@@ -79,133 +90,151 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="box box-center">
-				<img src="/img/Mario.png" alt="Mario">
-			</div>
-			<div class="box">
-				<h2>
-					马力欧
-				</h2>
-				<h3>
-					炎烈意决
-				</h3>
-				<table class="character-property">
-					<tr>
-						<td>
-							男
-						</td>
-						<td>
-							光
-						</td>
-						<td>
-							4/4
-						</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td class="character-property" rowspan="2">
-							〖决意〗
-						</td>
-						<td>
-							锁定技，你使用牌指定目标时，若其手牌数大于你，你摸一张牌，令此牌不可被目标响应。
-						</td>
-					</tr>
-					<tr>
-						<td>
-							锁定技，当一张牌指定目标时，若使用者为你，且其手牌数大于你，你摸一张牌，其不可响应此牌。
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="box box-left-middle">
-				<p>
-					武将作者：mario not mary、Show-K
-				</p>
-				<p>
-					插图作者：kuromame_983
-				</p>
-				<hr>
-				<p>
-					0001. 马力欧/Mario/マリオ
-				</p>
-				<p>
-					系列：Mario（马力欧）
-				</p>
-				<p>
-					初登场：Donkey Kong（森喜刚）
-				</p>
-				<p>
-					超级标志性的角色！这位游戏巨星常常从酷霸王手中拯救世界。他有惊人的跳跃能力和多种变身道具。在闲暇时刻，他还会参与体育运动，擅长的项目数也数不清。在大乱斗里，他是一个值得信赖的全能型斗士。让我们一起来说：“是我，马力欧！”
-				</p>
-				<p>
-					<a href="https://ssbuspirits.top/%E5%91%BD%E9%AD%82%E5%8E%9F%E4%BD%9C/%E9%A9%AC%E5%8A%9B%E6%AC%A7%E7%B3%BB%E5%88%97/0001-%E9%A9%AC%E5%8A%9B%E6%AC%A7-mario-%E3%83%9E%E3%83%AA%E3%82%AA"
-						target="_blank">
-						——封羽翎烈，《任天堂明星大乱斗特别版全命魂介绍》
+		</nav>
+	</header>
+	<div class="wrapper">
+		<article class="box justify-content-center">
+			<img src="/img/Mario.png" alt="Mario">
+		</article>
+		<article class="box">
+			<h2>
+				<ruby>马力欧<rp>（</rp>
+					<rt>Mario</rt>
+					<rp>）</rp>
+				</ruby>
+			</h2>
+			<h3>
+				炎烈意决
+			</h3>
+			<table class="character-property">
+				<tr>
+					<td>
+						男
+					</td>
+					<td>
+						光
+					</td>
+					<td>
+						4/4
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="character-property" rowspan="2">
+						〖决意〗
+					</td>
+					<td>
+						锁定技，你使用牌指定目标时，若其手牌数大于你，你摸一张牌，令此牌不可被目标响应。
+					</td>
+				</tr>
+				<tr>
+					<td>
+						锁定技，当一张牌指定目标时，若使用者为你，且其手牌数大于你，你摸一张牌，其不可响应此牌。
+					</td>
+				</tr>
+			</table>
+		</article>
+		<article class="box grid-column-1-span-2">
+			<p>
+				武将作者：mario not mary、Show-K
+			</p>
+			<p>
+				插图作者：kuromame_983
+			</p>
+			<hr>
+			<p>
+				0001. 马力欧/Mario/マリオ
+			</p>
+			<p>
+				系列：Mario（马力欧）
+			</p>
+			<p>
+				初登场：Donkey Kong（森喜刚）
+			</p>
+			<p>
+				超级标志性的角色！这位游戏巨星常常从酷霸王手中拯救世界。他有惊人的跳跃能力和多种变身道具。在闲暇时刻，他还会参与体育运动，擅长的项目数也数不清。在大乱斗里，他是一个值得信赖的全能型斗士。让我们一起来说：“是我，马力欧！”
+			</p>
+			<p>
+				<a href="https://ssbuspirits.top/%E5%91%BD%E9%AD%82%E5%8E%9F%E4%BD%9C/%E9%A9%AC%E5%8A%9B%E6%AC%A7%E7%B3%BB%E5%88%97/0001-%E9%A9%AC%E5%8A%9B%E6%AC%A7-mario-%E3%83%9E%E3%83%AA%E3%82%AA"
+					target="_blank">
+					——封羽翎烈，《任天堂明星大乱斗特别版全命魂介绍》
+				</a>
+			</p>
+			<hr>
+			<p>
+				太激昂了，太生生不息了。
+			</p>
+		</article>
+		<aside class="box grid-column-3-span-1 grid-row-1-span-2">
+			<h2>
+				<a href="/html/wiki/super-smash-tabletop.html">
+					大乱桌斗
+				</a>
+			</h2>
+			<ul>
+				<li>
+					<a href="/html/wiki/super-smash-tabletop/group.html">
+						势力
 					</a>
-				</p>
-				<hr>
-				<p>
-					太激昂了，太生生不息了。
-				</p>
-			</div>
-			<div class="box box-right box-1-span-2">
-				<h2>
-					<a href="/html/wiki/super-smash-tabletop.html">
-						大乱桌斗
-					</a>
-				</h2>
-				<ul>
-					<li>
-						武将
-						<ul>
-							<li>
-								光势力
-								<ul>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/mario.html">
-											马力欧
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/link.html">
-											林克
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/kirby.html">
-											卡比
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								暗势力
-								<ul>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/bowser.html">
-											酷霸王
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/ganondorf.html">
-											加侬多夫
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/meta-knight.html">
-											魅塔骑士
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
+				</li>
+				<li>
+					武将
+					<ul>
+						<li>
+							光势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/mario.html">
+										马力欧
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/link.html">
+										林克
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/kirby.html">
+										卡比
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							暗势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/bowser.html">
+										酷霸王
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/ganondorf.html">
+										加侬多夫
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/meta-knight.html">
+										魅塔骑士
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							魂势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/spirit/waluigi.html">
+										瓦路易吉
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
 	</div>
 	<footer>
 		<div id="clock"></div>

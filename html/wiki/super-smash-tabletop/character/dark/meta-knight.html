@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -11,16 +13,17 @@
 </head>
 
 <body onload="clock();">
-	<div class="container">
-		<div class="header">
+	<header>
+		<div>
+			<h1 class="font-blockit">
+				WIKÍ
+			</h1>
 			<h1>
-				<span class="font-blockit">
-					WIKÍ
-				</span>
-				<br>
 				Wiki
 			</h1>
-			<ul class="nav">
+		</div>
+		<nav>
+			<ul>
 				<li>
 					<a href="/index.html">
 						首页
@@ -32,36 +35,44 @@
 					</a>
 				</li>
 				<li>
-					作品
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/work/game.html">
-								游戏
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/music.html">
-								音乐
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/video.html">
-								视频
-							</a>
-						</li>
-					</ul>
+					<a>
+						作品
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/work/game.html">
+									游戏
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/music.html">
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/video.html">
+									视频
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
-					Wiki
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/wiki/super-smash-tabletop.html">
-								大乱桌斗
-							</a>
-						</li>
-					</ul>
+					<a>
+						Wiki
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/wiki/super-smash-tabletop.html">
+									大乱桌斗
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
 					<a href="/html/tool.html">
@@ -79,138 +90,156 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="box box-center">
-				<img src="/img/Meta Knight.png" alt="Meta Knight">
-			</div>
-			<div class="box">
-				<h2>
-					魅塔骑士
-				</h2>
-				<h3>
-					暗夜
-				</h3>
-				<table>
-					<tr>
-						<td class="character-property">
-							男
-						</td>
-						<td class="character-property">
-							暗
-						</td>
-						<td class="character-property">
-							4/4
-						</td>
-					</tr>
-				</table>
-				<table>
-					<tr>
-						<td class="character-property" rowspan="2">
-							〖残云〗
-						</td>
-						<td>
-							出牌阶段，你可以弃置一张牌（不得与本回合以此法弃置过的牌的花色相同），令所有角色本回合不能使用或打出与此牌花色相同的牌，然后视为你使用一张【决斗】。
-						</td>
-					</tr>
-					<tr>
-						<td>
-							出牌阶段，你可弃置一张与以此法于当前回合内弃置的牌花色不同的牌▶所有角色于当前回合内使用或打出的与你以此法弃置的牌花色相同的对应的所有实体牌不能均是其手牌区里的牌，你使用无对应的实体牌的【决斗】。
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="box box-left-middle">
-				<p>
-					武将作者：mario not mary
-				</p>
-				<p>
-					插图作者：糸谷さいれん
-				</p>
-				<p>
-					<a href="https://www.pixiv.net/artworks/60069126" target="_blank">
-						https:<wbr>//<wbr>www<wbr>.pixiv<wbr>.net<wbr>/artworks<wbr>/60069126
+		</nav>
+	</header>
+	<div class="wrapper">
+		<article class="box justify-content-center">
+			<img src="/img/Meta Knight.png" alt="Meta Knight">
+		</article>
+		<article class="box">
+			<h2>
+				<ruby>魅塔骑士<rp>（</rp>
+					<rt>Meta Knight</rt>
+					<rp>）</rp>
+				</ruby>
+			</h2>
+			<h3>
+				暗夜
+			</h3>
+			<table>
+				<tr>
+					<td class="character-property">
+						男
+					</td>
+					<td class="character-property">
+						暗
+					</td>
+					<td class="character-property">
+						4/4
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="character-property" rowspan="2">
+						〖残云〗
+					</td>
+					<td>
+						出牌阶段，你可以弃置一张牌（不得与本回合以此法弃置过的牌的花色相同），令所有角色本回合不能使用或打出与此牌花色相同的牌，然后视为你使用一张【决斗】。
+					</td>
+				</tr>
+				<tr>
+					<td>
+						出牌阶段，你可弃置一张与以此法于当前回合内弃置的牌花色不同的牌▶所有角色于当前回合内使用或打出的与你以此法弃置的牌花色相同的对应的所有实体牌不能均是其手牌区里的牌，你使用无对应的实体牌的【决斗】。
+					</td>
+				</tr>
+			</table>
+		</article>
+		<article class="box grid-column-1-span-2">
+			<p>
+				武将作者：mario not mary
+			</p>
+			<p>
+				插图作者：糸谷さいれん
+			</p>
+			<p>
+				<a href="https://www.pixiv.net/artworks/60069126" target="_blank">
+					https:<wbr>//<wbr>www<wbr>.pixiv<wbr>.net<wbr>/artworks<wbr>/60069126
+				</a>
+			</p>
+			<hr>
+			<p>
+				0324. 魅塔骑士/Meta Knight/メタナイト
+			</p>
+			<p>
+				系列：Kirby（星之卡比）
+			</p>
+			<p>
+				初登场：Kirby&apos;s Adventure（星之卡比 梦之泉物语）
+			</p>
+			<p>
+				卡比的神秘劲敌，披风可以变成翅膀的样子。在大乱斗里，他以剑术和强大的空战能力著称。他拥有多段跳，并且所有的必杀技都能用来回场。在Wii版《任天堂明星大乱斗》里，他的强度甚至破坏了平衡。
+			</p>
+			<p>
+				<a href="https://ssbuspirits.top/%E5%91%BD%E9%AD%82%E5%B1%9E%E6%80%A7/%E6%96%97%E5%A3%AB%E5%91%BD%E9%AD%82/0324-%E9%AD%85%E5%A1%94%E9%AA%91%E5%A3%AB-meta-knight-%E3%83%A1%E3%82%BF%E3%83%8A%E3%82%A4%E3%83%88"
+					target="_blank">
+					——封羽翎烈，《任天堂明星大乱斗特别版全命魂介绍》
+				</a>
+			</p>
+			<hr>
+			<p>
+				“Fight me.”
+			</p>
+		</article>
+		<aside class="box grid-column-3-span-1 grid-row-1-span-2">
+			<h2>
+				<a href="/html/wiki/super-smash-tabletop.html">
+					大乱桌斗
+				</a>
+			</h2>
+			<ul>
+				<li>
+					<a href="/html/wiki/super-smash-tabletop/group.html">
+						势力
 					</a>
-				</p>
-				<hr>
-				<p>
-					0324. 魅塔骑士/Meta Knight/メタナイト
-				</p>
-				<p>
-					系列：Kirby（星之卡比）
-				</p>
-				<p>
-					初登场：Kirby&apos;s Adventure（星之卡比 梦之泉物语）
-				</p>
-				<p>
-					卡比的神秘劲敌，披风可以变成翅膀的样子。在大乱斗里，他以剑术和强大的空战能力著称。他拥有多段跳，并且所有的必杀技都能用来回场。在Wii版《任天堂明星大乱斗》里，他的强度甚至破坏了平衡。
-				</p>
-				<p>
-					<a href="https://ssbuspirits.top/%E5%91%BD%E9%AD%82%E5%B1%9E%E6%80%A7/%E6%96%97%E5%A3%AB%E5%91%BD%E9%AD%82/0324-%E9%AD%85%E5%A1%94%E9%AA%91%E5%A3%AB-meta-knight-%E3%83%A1%E3%82%BF%E3%83%8A%E3%82%A4%E3%83%88"
-						target="_blank">
-						——封羽翎烈，《任天堂明星大乱斗特别版全命魂介绍》
-					</a>
-				</p>
-				<hr>
-				<p>
-					“Fight me.”
-				</p>
-			</div>
-			<div class="box box-right box-1-span-2">
-				<h2>
-					<a href="/html/wiki/super-smash-tabletop.html">
-						大乱桌斗
-					</a>
-				</h2>
-				<ul>
-					<li>
-						武将
-						<ul>
-							<li>
-								光势力
-								<ul>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/mario.html">
-											马力欧
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/link.html">
-											林克
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/light/kirby.html">
-											卡比
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								暗势力
-								<ul>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/bowser.html">
-											酷霸王
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/ganondorf.html">
-											加侬多夫
-										</a>
-									</li>
-									<li>
-										<a href="/html/wiki/super-smash-tabletop/character/dark/meta-knight.html">
-											魅塔骑士
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
+				</li>
+				<li>
+					武将
+					<ul>
+						<li>
+							光势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/mario.html">
+										马力欧
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/link.html">
+										林克
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/light/kirby.html">
+										卡比
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							暗势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/bowser.html">
+										酷霸王
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/ganondorf.html">
+										加侬多夫
+									</a>
+								</li>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/dark/meta-knight.html">
+										魅塔骑士
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							魂势力
+							<ul>
+								<li>
+									<a href="/html/wiki/super-smash-tabletop/character/spirit/waluigi.html">
+										瓦路易吉
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
 	</div>
 	<footer>
 		<div id="clock"></div>

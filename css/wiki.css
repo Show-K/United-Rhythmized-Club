@@ -13,6 +13,10 @@ td {
 	white-space: nowrap;
 }
 
+.group-img {
+	width: 2rem;
+}
+
 .td-none {
 	border-style: none;
 }

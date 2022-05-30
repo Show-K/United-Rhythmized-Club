@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -11,16 +13,17 @@
 </head>
 
 <body onload="clock();">
-	<div class="container">
-		<div class="header">
+	<header>
+		<div>
+			<h1 class="font-blockit">
+				WARK
+			</h1>
 			<h1>
-				<span class="font-blockit">
-					WARK
-				</span>
-				<br>
 				作品
 			</h1>
-			<ul class="nav">
+		</div>
+		<nav>
+			<ul>
 				<li>
 					<a href="/index.html">
 						首页
@@ -32,36 +35,44 @@
 					</a>
 				</li>
 				<li>
-					作品
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/work/game.html">
-								游戏
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/music.html">
-								音乐
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/video.html">
-								视频
-							</a>
-						</li>
-					</ul>
+					<a>
+						作品
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/work/game.html">
+									游戏
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/music.html">
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/video.html">
+									视频
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
-					Wiki
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/wiki/super-smash-tabletop.html">
-								大乱桌斗
-							</a>
-						</li>
-					</ul>
+					<a>
+						Wiki
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/wiki/super-smash-tabletop.html">
+									大乱桌斗
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
 					<a href="/html/tool.html">
@@ -79,30 +90,30 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="box box-left">
-				<h2>
-					视频
-				</h2>
-				<ul>
-					<li>
-						<a href="/html/work/video/bilibili.html">
-							Bilibili主页
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="box box-middle-right">
-				<h2>
-					Bilibili主页
-				</h2>
-				<p>
-					<a href="https://space.bilibili.com/18277975" target="_blank">
-						https:<wbr>//<wbr>space<wbr>.bilibili<wbr>.com<wbr>/18277975
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="box grid-column-1-span-1">
+			<h2>
+				视频
+			</h2>
+			<ul>
+				<li>
+					<a href="/html/work/video/bilibili.html">
+						Bilibili主页
 					</a>
-				</p>
-			</div>
+				</li>
+			</ul>
+		</div>
+		<div class="box grid-column-2-span-2">
+			<h2>
+				Bilibili主页
+			</h2>
+			<p>
+				<a href="https://space.bilibili.com/18277975" target="_blank">
+					https:<wbr>//<wbr>space<wbr>.bilibili<wbr>.com<wbr>/18277975
+				</a>
+			</p>
 		</div>
 	</div>
 	<footer>

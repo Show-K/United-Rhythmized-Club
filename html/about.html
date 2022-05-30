@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -10,17 +12,18 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body  onload="clock();">
-	<div class="container">
-		<div class="header">
+<body onload="clock();">
+	<header>
+		<div>
+			<h1 class="font-blockit">
+				ABÄÙT
+			</h1>
 			<h1>
-				<span class="font-blockit">
-					ABÄÙT
-				</span>
-				<br>
 				关于
 			</h1>
-			<ul class="nav">
+		</div>
+		<nav>
+			<ul>
 				<li>
 					<a href="/index.html">
 						首页
@@ -32,36 +35,44 @@
 					</a>
 				</li>
 				<li>
-					作品
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/work/game.html">
-								游戏
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/music.html">
-								音乐
-							</a>
-						</li>
-						<li>
-							<a href="/html/work/video.html">
-								视频
-							</a>
-						</li>
-					</ul>
+					<a>
+						作品
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/work/game.html">
+									游戏
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/music.html">
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="/html/work/video.html">
+									视频
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
-					Wiki
-					<i class="fa fa-caret-down"></i>
-					<ul class="subnav">
-						<li>
-							<a href="/html/wiki/super-smash-tabletop.html">
-								大乱桌斗
-							</a>
-						</li>
-					</ul>
+					<a>
+						Wiki
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/html/wiki/super-smash-tabletop.html">
+									大乱桌斗
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</li>
 				<li>
 					<a href="/html/tool.html">
@@ -79,36 +90,35 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="box box-full-width">
-				<p>
-					联合节奏化社由Show-K创建，主要创作各种原创或同人作品。
-				</p>
-				<p>
-					说是“联合”节奏化社，其实只有一个人……
-				</p>
-				<p>
-					<del>
-						这个背景迟早要换掉，以后要换成原创背景。
-					</del>
-				</p>
-				<p>
-					于是干脆就只用纯颜色了。
-				</p>
-			</div>
-			<div class="box box-full-width">
-				<p>
-					GitHub仓库：
-				</p>
-				<p>
-					<a href="https://github.com/Show-K/United-Rhythmized-Club" target="_blank">
-						https:<wbr>//<wbr>github<wbr>.com<wbr>/Show<wbr>-K<wbr>/United<wbr>-Rhythmized<wbr>-Club
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<article class="box grid-column-1-span-3">
+			<p>
+				联合节奏化社由Show-K创建，主要创作各种原创或同人作品。
+			</p>
+			<p>
+				说是“联合”节奏化社，其实只有一个人……
+			</p>
+			<p>
+				<del>
+					这个背景迟早要换掉，以后要换成原创背景。
+				</del>
+			</p>
+			<p>
+				于是干脆就只用纯颜色了。
+			</p>
+		</article>
+		<article class="box grid-column-1-span-3">
+			<p>
+				GitHub仓库：
+			</p>
+			<p>
+				<a href="https://github.com/Show-K/United-Rhythmized-Club" target="_blank">
+					https:<wbr>//<wbr>github<wbr>.com<wbr>/Show<wbr>-K<wbr>/United<wbr>-Rhythmized<wbr>-Club
+				</a>
+			</p>
+		</article>
 	</div>
 	<footer>
 		<div id="clock"></div>
