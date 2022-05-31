@@ -200,6 +200,10 @@ ul {
 	padding-left: 2.5em;
 }
 
+video {
+	width: 100%;
+}
+
 /* Class */
 .a-button {
 	border-radius: 10px;
