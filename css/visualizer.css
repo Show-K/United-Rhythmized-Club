@@ -1,34 +1,34 @@
 /* ID */
 #visualizer-step-forward {
-	background-image: url("/img/Step\ Forward.png");
+	background-image: url("/img/step-forward.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-intensity {
-	background-image: url("/img/Intensity.png");
+	background-image: url("/img/intensity.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-desperation {
-	background-image: url("/img/Desperation.png");
+	background-image: url("/img/desperation.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-determination {
-	background-image: url("/img/Determination.png");
+	background-image: url("/img/determination.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-optimism {
-	background-image: url("/img/Optimism.png");
+	background-image: url("/img/optimism.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -50,20 +50,8 @@
 	border-radius: 10px;
 }
 
-/* Class */
-@media (prefers-color-scheme: dark) {
-	.visualizer-bar {
-		background-color: white;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	.visualizer-bar {
-		background-color: black;
-	}
-}
-
 .visualizer-bar {
+	background-color: white;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 	width: 100%;
 }

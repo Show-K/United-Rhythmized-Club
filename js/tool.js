@@ -39,3 +39,7 @@ function copyToClipboardFormatUrl() {
 		alert("文本框无内容！");
 	}
 }
+
+function utf8ToBase64(str) {
+	return btoa(unescape(encodeURIComponent(str)));
+}
