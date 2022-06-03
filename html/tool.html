@@ -99,12 +99,27 @@
 				格式化URL
 			</h2>
 			<form class="format-url">
-				<input type="text" id="url" placeholder="请输入URL">
-				<input type="button" id="format" value="格式化" onclick="formatUrl();">
+				<input type="text" id="format-url-url" placeholder="请输入URL">
+				<input type="button" id="format-url-format" value="格式化" onclick="formatUrlFormat();">
 			</form>
 			<form class="format-url">
-				<input type="text" id="url-result" placeholder="结果" disabled>
-				<input type="button" id="copy" value="复制到粘贴板" onclick="copyToClipboardFormatUrl();">
+				<input type="text" id="format-url-result" placeholder="结果" disabled>
+				<input type="button" id="format-url-copy" value="复制到剪贴板" onclick="formatUrlCopy();">
+			</form>
+		</article>
+		<article class="box grid-column-1-span-3">
+			<h2>
+				Base64编解码
+			</h2>
+			<form class="base64">
+				<input type="text" id="base64-utf-8" placeholder="请输入UTF-8编码的文本">
+				<input type="button" id="base64-encode" value="编码" onclick="base64Encode();">
+				<input type="button" id="base64-utf-8-copy" value="复制到剪贴板" onclick="base64Utf8Copy();">
+			</form>
+			<form class="base64">
+				<input type="text" id="base64-base64" placeholder="请输入Base64编码的文本">
+				<input type="button" id="base64-decode" value="解码" onclick="base64Decode();">
+				<input type="button" id="base64-base64-copy" value="复制到剪贴板" onclick="base64Base64Copy();">
 			</form>
 		</article>
 		<article class="box grid-column-1-span-3">
@@ -123,8 +138,12 @@
 	</div>
 	<footer>
 		<div id="clock"></div>
-		Website by
-		<b>Show-K Adot<b>
+		<p>
+			<i class="fa fa-html5"></i>
+			<i class="fa fa-css3"></i>
+			Powered by
+			<b>Show-K Adot<b>
+		</p>
 	</footer>
 </body>
 

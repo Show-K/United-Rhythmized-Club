@@ -115,9 +115,3 @@ button {
 input[type="file"] {
 	width: 100%;
 }
-
-/* ID */
-#url,
-#url-result {
-	width: 100%;
-}

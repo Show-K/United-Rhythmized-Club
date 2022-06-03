@@ -1,6 +1,12 @@
 // Global variables
-let requestID = null;
-const audioContext = new AudioContext();
+/**
+ * @type {number}
+ */
+let requestID;
+/**
+ * @type {AudioContext}
+ */
+let audioCtx;
 const ANALYZER_NODES = new Map();
 
 /**
@@ -8,7 +14,14 @@ const ANALYZER_NODES = new Map();
  * @param {string} id 
  */
 function visualizer(id) {
-	cancelAnimationFrame(requestID);
+	if (typeof requestID !== "undefined") cancelAnimationFrame(requestID);
+	if (typeof audioCtx === "undefined") {
+		audioCtx = new AudioContext();
+	}
+	else {
+		audioCtx.close();
+		audioCtx = new AudioContext();
+	}
 	const audio = document.getElementById(id);
 	/**
 	 * @type {AnalyserNode}
@@ -18,11 +31,11 @@ function visualizer(id) {
 		analyzer = ANALYZER_NODES.get(audio);
 	}
 	else {
-		const mediaElementSource = audioContext.createMediaElementSource(audio);
-		analyzer = audioContext.createAnalyser();
+		const mediaElementSource = audioCtx.createMediaElementSource(audio);
+		analyzer = audioCtx.createAnalyser();
 		ANALYZER_NODES.set(audio, analyzer);
 		mediaElementSource.connect(analyzer);
-		mediaElementSource.connect(audioContext.destination);
+		mediaElementSource.connect(audioCtx.destination);
 	}
 	const byteFrequencyData = new Uint8Array(analyzer.frequencyBinCount);
 	const visualizer = document.getElementById("visualizer-" + id);

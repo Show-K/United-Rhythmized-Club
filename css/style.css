@@ -1,6 +1,6 @@
 @import url(/css/font.css);
 @import url(/css/form.css);
-@import url(/css/tree.css);
+@import url(/css/tool.css);
 @import url(/css/visualizer.css);
 @import url(/css/wiki.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -192,7 +192,7 @@ img {
 
 li:hover nav {
 	filter: opacity(1);
-	transition-duration: 0.25s;
+	transition-duration: 0.2s;
 	visibility: visible;
 }
 
@@ -312,9 +312,4 @@ video {
 	.grid-row-1-span-5 {
 		grid-row: auto;
 	}
-}
-
-.format-url {
-	display: flex;
-	gap: 10px;
 }

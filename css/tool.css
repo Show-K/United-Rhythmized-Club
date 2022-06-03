@@ -1,0 +1,14 @@
+/* ID */
+#format-url-url,
+#format-url-result,
+#base64-utf-8,
+#base64-base64 {
+	width: 100%;
+}
+
+/* Class */
+.format-url,
+.base64 {
+	display: flex;
+	gap: 10px;
+}
