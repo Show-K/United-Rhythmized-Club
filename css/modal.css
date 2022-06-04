@@ -1,0 +1,44 @@
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+.img-modal {
+	cursor: pointer;
+	transition-duration: 0.25s;
+}
+
+.img-modal:hover {
+	opacity: 0.75;
+}
+
+.modal {
+	background-color: rgba(0, 0, 0, 0.75);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.modal-img {
+	animation-name: zoom;
+	animation-duration: 0.25s;
+	height: 87.5%;
+	object-fit: contain;
+	object-position: center;
+	width: 87.5%;
+}
+
+@media screen and (max-width: 800px) {
+	.modal-img {
+		height: 100%;
+		width: 100%;
+	}
+}
