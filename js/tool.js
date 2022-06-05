@@ -18,11 +18,9 @@ function formatUrl(url) {
 	).join("//<wbr>");
 	return formatted;
 }
-
 function formatUrlFormat() {
 	document.getElementById("format-url-result").value = formatUrl(document.getElementById("format-url-url").value);
 }
-
 /**
  * Copy to clipboard
  * @param {string} str
@@ -39,11 +37,9 @@ function copyToClipboard(str) {
 		alert("无内容！");
 	}
 }
-
 function formatUrlCopy() {
 	copyToClipboard(document.getElementById("format-url-result").value);
 }
-
 /**
  * Convert a UTF-8 string to a Base64 string
  * @param {string} str
@@ -53,7 +49,6 @@ function utf8ToBase64(str) {
 		return String.fromCharCode(parseInt(p1, 16));
 	}));
 }
-
 /**
  * Convert a Base64 string to a UTF-8 string
  * @param {string} str
@@ -63,19 +58,15 @@ function base64ToUtf8(str) {
 		return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
 	}).join(""));
 }
-
 function base64Encode() {
 	document.getElementById("base64-base64").value = utf8ToBase64(document.getElementById("base64-utf-8").value);
 }
-
 function base64Utf8Copy() {
 	copyToClipboard(document.getElementById("base64-utf-8").value);
 }
-
 function base64Decode() {
 	document.getElementById("base64-utf-8").value = base64ToUtf8(document.getElementById("base64-base64").value);
 }
-
 function base64Base64Copy() {
 	copyToClipboard(document.getElementById("base64-base64").value);
 }

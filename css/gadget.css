@@ -1,9 +1,21 @@
+@keyframes marquee {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
 @keyframes zoom {
 	from {
+		opacity: 0;
 		transform: scale(0);
 	}
 
 	to {
+		opacity: 1;
 		transform: scale(1);
 	}
 }
@@ -15,6 +27,17 @@
 
 .img-modal:hover {
 	opacity: 0.75;
+}
+
+.marquee {
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-name: marquee;
+	animation-timing-function: linear;
+}
+
+.marquee:hover {
+	animation-play-state: paused;
 }
 
 .modal {
@@ -30,15 +53,15 @@
 .modal-img {
 	animation-name: zoom;
 	animation-duration: 0.25s;
-	height: 87.5%;
+	height: 100%;
 	object-fit: contain;
 	object-position: center;
-	width: 87.5%;
+	padding: 6.25%;
+	width: 100%;
 }
 
 @media screen and (max-width: 800px) {
 	.modal-img {
-		height: 100%;
-		width: 100%;
+		padding: 0;
 	}
 }

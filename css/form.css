@@ -108,10 +108,22 @@ input[type="file"]::file-selector-button:active {
 	filter: opacity(70%);
 }
 
-button {
+button,
+input[type="file"] {
 	width: 100%;
 }
 
-input[type="file"] {
+form {
+	display: flex;
+	gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+	form {
+		flex-direction: column;
+	}
+}
+
+input[type="text"] {
 	width: 100%;
 }

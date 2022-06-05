@@ -8,7 +8,6 @@ let requestID;
  */
 let audioCtx;
 const ANALYZER_NODES = new Map();
-
 /**
  * Initialize a visualizer.
  * @param {string} id 

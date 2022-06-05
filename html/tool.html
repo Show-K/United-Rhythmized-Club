@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tool</title>
-	<script src="/js/clock.js"></script>
+	<script src="/js/gadget.js"></script>
 	<script src="/js/tool.js"></script>
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="preload" href="/font/Blockit-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -118,13 +118,17 @@
 			</h2>
 			<form class="base64">
 				<input type="text" id="base64-utf-8" placeholder="请输入UTF-8编码的文本">
-				<input type="button" id="base64-encode" value="编码" onclick="base64Encode();">
-				<input type="button" id="base64-utf-8-copy" value="复制到剪贴板" onclick="base64Utf8Copy();">
+				<div class="base64-button">
+					<input type="button" id="base64-encode" value="编码" onclick="base64Encode();">
+					<input type="button" id="base64-utf-8-copy" value="复制到剪贴板" onclick="base64Utf8Copy();">
+				</div>
 			</form>
 			<form class="base64">
 				<input type="text" id="base64-base64" placeholder="请输入Base64编码的文本">
-				<input type="button" id="base64-decode" value="解码" onclick="base64Decode();">
-				<input type="button" id="base64-base64-copy" value="复制到剪贴板" onclick="base64Base64Copy();">
+				<div class="base64-button">
+					<input type="button" id="base64-decode" value="解码" onclick="base64Decode();">
+					<input type="button" id="base64-base64-copy" value="复制到剪贴板" onclick="base64Base64Copy();">
+				</div>
 			</form>
 		</article>
 		<article class="box grid-column-1-span-3">

@@ -5,7 +5,6 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Work</title>
-	<script src="/js/visualizer.js"></script>
 	<script src="/js/gadget.js"></script>
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="preload" href="/font/Blockit-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,7 +12,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body onload="clock(); visualizerStepForward();">
+<body onload="clock(); modalWindier();">
 	<header>
 		<div>
 			<h1 class="font-blockit">
@@ -99,52 +98,75 @@
 		</nav>
 	</header>
 	<div class="wrapper">
-		<aside class="box grid-column-1-span-1">
+		<div class="box grid-column-1-span-1">
 			<h2>
-				音乐
+				图片
 			</h2>
 			<ul>
 				<li>
-					<a href="/html/work/music/step-forward.html">
-						Step Forward
-					</a>
+					Show-K
+					<ul>
+						<li>
+							<a href="/html/work/image/show-k/b-m-x.html">
+								B-M-X
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="/html/work/music/immersion.html">
-						Immersion
-					</a>
+					MNM
+					<ul>
+						<li>
+							<a href="/html/work/image/mnm/bowser.html">
+								BOWSER
+							</a>
+						</li>
+						<li>
+							<a href="/html/work/image/mnm/mnm-yumikohimi.html">
+								MNM&柚子
+							</a>
+						</li>
+						<li>
+							<a href="/html/work/image/mnm/massy.html">
+								MASSY
+							</a>
+						</li>
+						<li>
+							<a href="/html/work/image/mnm/miumiu.html">
+								缪缪
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="/html/work/music/intensity.html">
-						Intensity
-					</a>
-				</li>
-				<li>
-					<a href="/html/work/music/desperation.html">
-						Desperation
-					</a>
-				</li>
-				<li>
-					<a href="/html/work/music/determination.html">
-						Determination
-					</a>
-				</li>
-				<li>
-					<a href="/html/work/music/optimism.html">
-						Optimism
-					</a>
+					封羽翎烈
+					<ul>
+						<li>
+							<a href="/html/work/image/windier/windier.html">
+								Windier
+							</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
-		</aside>
-		<article class="box grid-column-2-span-2">
+		</div>
+		<div class="box grid-column-2-span-2">
 			<h2>
-				Step Forward
+				Windier
 			</h2>
-			<div class="visualizer" id="visualizer-step-forward"></div>
-			<audio controls id="step-forward" preload="auto" src="/music/step-forward.ogg">
-				您的浏览器不支持音频元素（还在用IE？！还不快去换现代浏览器！！）
-			</audio>
-		</article>
+			<h3>
+				By 封羽翎烈
+			</h3>
+			<h4>
+				<time datetime="2021-11-13">
+					November 13, 2021
+				</time>
+			</h4>
+			<img src="/image/windier.png" class="img-modal" id="windier" alt="Windier" title="Windier">
+			<div class="modal" id="modal-windier">
+				<img src="/image/windier.png" class="modal-img" alt="Windier" title="Windier">
+			</div>
+		</div>
 	</div>
 	<footer>
 		<div id="clock"></div>

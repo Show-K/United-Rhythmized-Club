@@ -1,10 +1,15 @@
+function clock() {
+	const now = new Date();
+	document.getElementById("clock").innerHTML = now.toLocaleString();
+	requestAnimationFrame(clock);
+}
 /**
- * Create a modal
+ * Show a modal
  * @param {string} id 
  */
 function modal(id) {
-	const modal = document.getElementById("modal-" + id);
 	const img = document.getElementById(id);
+	const modal = document.getElementById("modal-" + id);
 	img.onclick = _ => {
 		modal.style.display = "flex";
 		modal.style.alignContent = "center";
@@ -16,23 +21,21 @@ function modal(id) {
 		modal.style.display = "none";
 	}
 }
-
 function modalBmx() {
 	modal("b-m-x");
 }
-
 function modalBowser() {
 	modal("bowser");
 }
-
 function modalMnmYumikohimi() {
 	modal("mnm-yumikohimi");
 }
-
 function modalMassy() {
 	modal("massy");
 }
-
 function modalMiumiu() {
 	modal("miumiu");
+}
+function modalWindier() {
+	modal("windier");
 }
