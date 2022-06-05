@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body onload="visualizerTool();">
+<body>
 	<div class="visualizer" id="visualizer-audio"></div>
 	<audio controls id="audio">
 		您的浏览器不支持音频元素（还在用IE？！还不快去换现代浏览器！！）
@@ -20,6 +20,9 @@
 	<form>
 		<input type="file" id="file" name="file" accept="audio/*">
 	</form>
+	<script>
+		visualizerTool();
+	</script>
 </body>
 
 </html>

@@ -21,21 +21,3 @@ function modal(id) {
 		modal.style.display = "none";
 	}
 }
-function modalBmx() {
-	modal("b-m-x");
-}
-function modalBowser() {
-	modal("bowser");
-}
-function modalMnmYumikohimi() {
-	modal("mnm-yumikohimi");
-}
-function modalMassy() {
-	modal("massy");
-}
-function modalMiumiu() {
-	modal("miumiu");
-}
-function modalWindier() {
-	modal("windier");
-}

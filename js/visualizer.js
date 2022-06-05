@@ -4,9 +4,8 @@
  */
 let requestID;
 /**
- * @type {AudioContext}
+ * @type {Map<HTMLElement, AnalyserNode>}
  */
-let audioCtx;
 const ANALYZER_NODES = new Map();
 /**
  * Initialize a visualizer.
@@ -14,12 +13,12 @@ const ANALYZER_NODES = new Map();
  */
 function visualizer(id) {
 	if (typeof requestID !== "undefined") cancelAnimationFrame(requestID);
-	if (typeof audioCtx === "undefined") {
-		audioCtx = new AudioContext();
+	if (typeof window.audioCtx === "AudioContext") {
+		window.audioCtx.close();
+		window.audioCtx = new AudioContext();
 	}
 	else {
-		audioCtx.close();
-		audioCtx = new AudioContext();
+		window.audioCtx = new AudioContext();
 	}
 	const audio = document.getElementById(id);
 	/**
@@ -30,11 +29,11 @@ function visualizer(id) {
 		analyzer = ANALYZER_NODES.get(audio);
 	}
 	else {
-		const mediaElementSource = audioCtx.createMediaElementSource(audio);
-		analyzer = audioCtx.createAnalyser();
+		const mediaElementSource = window.audioCtx.createMediaElementSource(audio);
+		analyzer = window.audioCtx.createAnalyser();
 		ANALYZER_NODES.set(audio, analyzer);
 		mediaElementSource.connect(analyzer);
-		mediaElementSource.connect(audioCtx.destination);
+		mediaElementSource.connect(window.audioCtx.destination);
 	}
 	const byteFrequencyData = new Uint8Array(analyzer.frequencyBinCount);
 	const visualizer = document.getElementById("visualizer-" + id);
@@ -56,24 +55,6 @@ function visualizer(id) {
 		requestID = requestAnimationFrame(animationFrame);
 	}
 	animationFrame();
-}
-function visualizerStepForward() {
-	visualizer("step-forward");
-}
-function visualizerImmersion() {
-	visualizer("immersion");
-}
-function visualizerIntensity() {
-	visualizer("intensity");
-}
-function visualizerDesperation() {
-	visualizer("desperation");
-}
-function visualizerDetermination() {
-	visualizer("determination");
-}
-function visualizerOptimism() {
-	visualizer("optimism");
 }
 function visualizerTool() {
 	document.getElementById("file").addEventListener("change", function (event) {
