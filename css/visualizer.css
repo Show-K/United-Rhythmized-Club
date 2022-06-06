@@ -1,34 +1,34 @@
 /* ID */
 #visualizer-step-forward {
-	background-image: url("/image/step-forward.png");
+	background-image: url("/image/step-forward.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-intensity {
-	background-image: url("/image/intensity.png");
+	background-image: url("/image/intensity.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-desperation {
-	background-image: url("/image/desperation.png");
+	background-image: url("/image/desperation.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-determination {
-	background-image: url("/image/determination.png");
+	background-image: url("/image/determination.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #visualizer-optimism {
-	background-image: url("/image/optimism.png");
+	background-image: url("/image/optimism.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
