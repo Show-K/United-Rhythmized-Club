@@ -1,6 +1,5 @@
 function clock() {
-	const now = new Date();
-	document.getElementById("clock").innerHTML = now.toLocaleString();
+	document.getElementById("clock").innerHTML = new Date().toLocaleString();
 	requestAnimationFrame(clock);
 }
 /**
