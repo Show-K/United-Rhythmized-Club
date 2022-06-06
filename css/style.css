@@ -1,6 +1,7 @@
 @import url(/css/font.css);
 @import url(/css/form.css);
 @import url(/css/gadget.css);
+@import url(/css/link.css);
 @import url(/css/tool.css);
 @import url(/css/visualizer.css);
 @import url(/css/wiki.css);
@@ -243,7 +244,7 @@ video {
 }
 
 .logo img {
-	height: 4.5em;
+	height: 4.5rem;
 }
 
 .logo img::selection {
@@ -283,10 +284,6 @@ video {
 .box>img {
 	border-radius: 10px;
 	width: 100%;
-}
-
-.box h2 img {
-	vertical-align: text-bottom;
 }
 
 .justify-content-center {
